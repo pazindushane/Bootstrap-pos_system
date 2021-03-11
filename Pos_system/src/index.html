@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shane's POS</title>
+    <link rel="stylesheet" href="Assests/css/bootstrap.css">
+    <link rel="stylesheet" href="Assests/css/style.css" >
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="Assests/img/do-minimalist-logo-design-with-business-card-and-stationery__1_-removebg-preview.png" alt=""  height="34" class="d-inline-block align-top">
+            Shane's <span>POS</span>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sales Analytics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+</nav>
+<hr class=" hr1">
+
+<div id="dash" class="dash">
+
+    <img class="img1" src="Assests/img/image.gif">
+    <h2>Dash<span>board</span></h2>
+
+    <a href="Customer.html" >
+    <button class=" btn btn-outline-primary b1 ">Save Customer</button>
+    </a>
+
+    <a href="Order.html" >
+        <button class=" btn btn-outline-success b2 ">Make order</button>
+    </a>
+
+    <a href="Items.html" >
+        <button class=" btn btn-outline-warning b3 ">Items</button>
+    </a>
+
+    <a href="Analytics.html" >
+        <button class=" btn btn-outline-danger b4 ">Analytics</button>
+    </a>
+</div>
+
+<div id="ob1" class="ob1">
+
+</div>
+
+
+<!--&lt;!&ndash;&lt;!&ndash;<div class="container">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;            One of three columns&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;            One of three columns&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col-sm">&ndash;&gt;-->
+<!--&lt;!&ndash;            One of three columns&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
+
+<!--<h1>Hello Shane</h1>-->
+
+<!--<table class="table table-bordered">-->
+
+<!--    <thead class="bg-danger text-light">-->
+<!--        <tr>-->
+<!--            <th>Customer ID</th>-->
+<!--            <th>Customer Name</th>-->
+<!--            <th>Customer Address</th>-->
+<!--        </tr>-->
+<!--    </thead>-->
+
+<!--    <tbody>-->
+<!--        <tr>-->
+<!--            <td>C001</td>-->
+<!--            <td>nimal</td>-->
+<!--            <td>Panadura</td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td>C002</td>-->
+<!--            <td>Kamal</td>-->
+<!--            <td>Colombo</td>-->
+<!--        </tr>-->
+<!--    </tbody>-->
+
+<!--</table>-->
+
+<!--<button class="btn bg-danger text-light">Save Customer</button>-->
+<!--<button class="btn bg-warning text-light">Save Customer</button>-->
+<!--<button class="btn bg-primary text-light">Save Customer</button>-->
+<!--<button class="btn bg-info text-light">Save Customer</button>-->
+<!--<button class="btn bg-dark text-light">Save Customer</button>-->
+<!--<button class="btn bg-gradient text-light">Save Customer</button>-->
+<!--<button class="btn bg-success text-light">Save Customer</button>-->
+
+
+<script src="Assests/js/bootstrap.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#dash a').on('click', function (e) {
+            e.preventDefault();
+            var page = $(this).attr('href');
+            $('#ob1').load(page);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shane's POS</title>
+    <link rel="stylesheet" href="Assests/css/bootstrap.css">
+    <link rel="stylesheet" href="Assests/css/style.css" >
+</head>
+<body>
+
+<section class="container">
+    <section class=" row">
+        <div class="col-sm">
+            <form class="addc">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer ID" aria-describedby="Customer ID">
+                    <label for="Customer ID" >Customer ID</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer Name" aria-describedby="Customer Name">
+                    <label for="Customer Name" >Customer Name</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer Address" aria-describedby="Customer Address">
+                    <label for="Customer Address" >Customer Address</label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check rfemale">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+                <br>
+                <button type="button" class="btn btn-primary">Save Customer</button>
+                <button type="button" class="btn btn-danger">Clear</button>
+            </form>
+        </div>
+
+        <div class="col-sm ">
+            <table class="table table-hover tb1">
+
+                <thead class="bg-primary text-light">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Gender</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>nimal</td>
+                    <td>Panadura</td>
+                    <td>Male</td>
+                </tr>
+
+                <tr>
+                    <td>C002</td>
+                    <td>Kamal</td>
+                    <td>Colombo</td>
+                    <td>Male</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <!--    <div class="row col-sm"></div>-->
+    </section>
+
+</section>
+
+<div class="box1">
+    <img src="Assests/img/icons8-user-groups-64.png">
+    <p class="fs-1  p11">150</p>
+    <p class="fs-5  p12">Customers</p>
+</div>
+
+
+<script src="Assests/js/bootstrap.js"></script>
+</body>
+</html>
